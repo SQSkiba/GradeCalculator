@@ -1,0 +1,24 @@
+
+.blue1{
+    background-color: steelblue;
+}
+.blue2{
+    background-color: slateblue;
+}
+.blue3{
+    background-color: gray;
+}
+body {
+     font-family: "Times New Roman";
+     background: lightblue;
+ }
+
+h1, h2, h3, h4 {
+    position: static;
+    text-align: center;
+    font-family: "Arial Black";
+}
+.w3-lobster {
+    font-family: "Lobster", serif;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
+</head>
+<body  onload="createTable()" class="everything">
+
+    <div>
+        <h1 id="header" class="w3-lobster"> Grade Calculator </h1>
+        <h4 class="w3-lobster"> By Simone Skiba </h4>
+    <div id="container" align="center" >
+    </div>
+        <br>
+        <div align="center">
+            <input type="text" id="type"  placeholder="ex: Tests & Quizzes">
+            <button onclick="addRow()" class="w3-button w3-teal w3-hover-green w3-round" id="rowButton">Add Row</button>
+        </div>
+        <br>
+    <div align="center">
+    <button onclick="calculateGrade()" class="w3-button w3-teal w3-hover-green w3-round">Calculate Grade</button>
+    </div>
+    <div id="totalGrade" align="center" ></div>
+    </div>
+    <br>
+    <br>
+    <h3 class="w3-lobster"> Calculate Grade Needed for Final</h3>
+    <table align="center" >
+        <tr>
+            <td>Grade Wanted:  </td>
+            <td> <input type="text" id="gradeDesired" placeholder="90"></td>
+        </tr>
+        <tr>
+            <td>Final Weight:  </td>
+            <td> <input type="text" id="finalWeight" placeholder="20"></td>
+        </tr>
+    </table>
+    <div align="center">
+        <button onclick="determineNeededGrade()" class="w3-button w3-teal w3-hover-green w3-round"> Calculate Final Grade Needed </button>
+    </div>
+    <div id="neededGrade" align="center"></div>
+</body>
+</html>
